@@ -9,7 +9,6 @@ import org.apache.ibatis.annotations.Param;
 
 //import java.util.List;
 
-@Mapper
 public interface UserMapper extends BaseMapper<User> {
     void updateBalanceByIds(@Param(/*"ew"*/Constants.WRAPPER) LambdaQueryWrapper<User> wrapper,
                             @Param("amount") Integer amount);

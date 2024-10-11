@@ -1,17 +1,32 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/mp
+    url: jdbc:mysql://localhost:3306/mp?rewriteBatchedStatements=true
     username: root
     password: javamysql
     driver-class-name: com.mysql.cj.jdbc.Driver
+  security:
+    user:
+      name: mengm
+      password: mingtr
 
 #mybatis:
 #  mapper-locations: classpath:mapper/**/*.xml
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl   # 输出日志
+    # 枚举处理器
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
   type-aliases-package: com.panyong.mp.domain.po
   mapper-locations: "classpath*:/mapper/**/*.xml"   # Mapper.xml 文件地址,默认值
+  global-config:
+    db-config:
+      logic-delete-field: deleted   # 配置逻辑删除字段
+
+logging:
+  level:
+    com.panyong: debug
+  pattern:
+    dateformat: HH:mm:ss
 
 #springdoc:
 #  swagger-ui:
@@ -39,9 +54,21 @@ springdoc:
     - group: 'default'
       paths-to-match: '/**'
       packages-to-scan: com.panyong.mp.controller
+  model-and-view-allowed: true
 
-# knife4j的增强配置
+#knife4j配置
 knife4j:
-  enable: false
+  #是否启用增强设置
+  enable: true
+  #开启生产环境屏蔽
+  production: false
+  #是否启用登录认证
+#  basic:
+#    enable: true
+#    username: admin
+#    password: 123456
   setting:
-    language: zh_cn  # Knife4j 的界面语言
+    language: zh_cn
+    enable-version: true
+    enable-swagger-models: true
+    swagger-model-name: 用户模块
