@@ -1,5 +1,5 @@
 # 使用JDK 21的官方镜像
-FROM openjdk:21-slim
+FROM openjdk:17-jdk-slim
 
 # 设定时区为上海（如果有需要）
 ENV TZ=Asia/Shanghai

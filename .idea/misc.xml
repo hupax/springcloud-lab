@@ -19,16 +19,26 @@
         <option value="$PROJECT_DIR$/hmall/pom.xml" />
         <option value="$PROJECT_DIR$/hmall/hm-service/pom.xml" />
         <option value="$PROJECT_DIR$/hmall/hm-common/pom.xml" />
+        <option value="$PROJECT_DIR$/mall/pom.xml" />
+        <option value="$PROJECT_DIR$/mall/mall-service/pom.xml" />
+        <option value="$PROJECT_DIR$/hmalls/pom.xml" />
+        <option value="$PROJECT_DIR$/hmall/common/pom.xml" />
+        <option value="$PROJECT_DIR$/hmall/service/pom.xml" />
+        <option value="$PROJECT_DIR$/malle/pom.xml" />
+        <option value="$PROJECT_DIR$/mille/pom.xml" />
+        <option value="$PROJECT_DIR$/mlle/pom.xml" />
+        <option value="$PROJECT_DIR$/hmalls/hm-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/mall/pom.xml" />
         <option value="$PROJECT_DIR$/mp-demo/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

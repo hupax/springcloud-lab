@@ -29,3 +29,7 @@ bin/
 .DS_Store
 
 note
+
+SpringCloudNote
+
+**/target

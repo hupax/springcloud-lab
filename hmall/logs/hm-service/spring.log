@@ -1,6 +1,6 @@
-13:46:33:863  INFO 98977 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 21.0.2 on shaxiaodeMac-mini.local with PID 98977 (/Users/panyong/cloud/hmall/hm-service/target/classes started by panyong in /Users/panyong/cloud)
-13:46:33:865 DEBUG 98977 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
-13:46:33:865  INFO 98977 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "local"
+13:46:33:863  INFO 98977 --- [main] com.hmall.HMallsApplication               : Starting HMallApplication using Java 21.0.2 on shaxiaodeMac-mini.local with PID 98977 (/Users/panyong/cloud/hmall/hm-service/target/classes started by panyong in /Users/panyong/cloud)
+13:46:33:865 DEBUG 98977 --- [main] com.hmall.HMallsApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
+13:46:33:865  INFO 98977 --- [main] com.hmall.HMallsApplication               : The following 1 profile is active: "local"
 13:46:34:171  INFO 98977 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
 13:46:34:173  INFO 98977 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 13:46:34:183  INFO 98977 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
@@ -14,4 +14,4 @@
 13:46:35:642  INFO 98977 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
 13:46:35:643  INFO 98977 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 13:46:35:654  INFO 98977 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-13:46:35:731  INFO 98977 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 2.03 seconds (JVM running for 2.431)
+13:46:35:731  INFO 98977 --- [main] com.hmall.HMallsApplication               : Started HMallApplication in 2.03 seconds (JVM running for 2.431)

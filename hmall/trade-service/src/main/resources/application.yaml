@@ -1,0 +1,63 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: trade-service  # 微服务名称
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://${hm.db.host}:3306/hm-trade?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ${hm.db.pw}
+  threads:
+    virtual:
+      enabled: true
+  cloud:
+    nacos:
+      server-addr: localhost:8848   # nacos地址
+mybatis-plus:
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+  global-config:
+    db-config:
+      update-strategy: not_null
+      id-type: auto
+logging:
+  level:
+    com.ml: debug
+  pattern:
+    dateformat: HH:mm:ss:SSS
+  file.name:
+    path: "logs/${spring.application.name}"
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui/index.html  # 推荐的 Swagger UI 路径
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      packages-to-scan: com.ml.trade.controller
+  model-and-view-allowed: true
+
+#knife4j配置
+knife4j:
+  #是否启用增强设置
+  enable: true
+  #开启生产环境屏蔽
+  production: false
+  #是否启用登录认证
+  #  basic:
+  #    enable: true
+  #    username: admin
+  #    password: 123456
+  setting:
+    language: zh_cn
+    enable-version: true
+    enable-swagger-models: true
+    swagger-model-name: 用户模块
+

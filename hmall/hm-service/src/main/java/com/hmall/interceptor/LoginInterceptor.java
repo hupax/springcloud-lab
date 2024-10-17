@@ -15,6 +15,11 @@ public class LoginInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        String uri = request.getRequestURI();
+        // 排除 Swagger UI 的路径
+        if (uri.startsWith("/swagger-ui") || uri.startsWith("/v3/api-docs") || uri.startsWith("/swagger-resources")) {
+            return true;
+        }
         // 1.获取请求头中的 token
         String token = request.getHeader("authorization");
         // 2.校验token
@@ -30,4 +35,5 @@ public class LoginInterceptor implements HandlerInterceptor {
         // 清理用户
         UserContext.removeUser();
     }
+    
 }
