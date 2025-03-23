@@ -35,3 +35,10 @@ SpringCloudNote
 **/target
 
 **/.idea
+
+**/.gitignore
+
+.idea
+/.idea/
+cloud.iml
+**/out
