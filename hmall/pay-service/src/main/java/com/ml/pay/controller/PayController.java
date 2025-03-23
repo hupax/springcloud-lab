@@ -1,10 +1,10 @@
 package com.ml.pay.controller;
 
 import com.hmall.common.exception.BizIllegalException;
-import com.hmall.domain.dto.PayApplyDTO;
-import com.hmall.domain.dto.PayOrderFormDTO;
-import com.hmall.enums.PayType;
-import com.hmall.service.IPayOrderService;
+import com.ml.pay.domain.dto.PayApplyDTO;
+import com.ml.pay.domain.dto.PayOrderFormDTO;
+import com.ml.pay.enums.PayType;
+import com.ml.pay.service.IPayOrderService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Schema;
